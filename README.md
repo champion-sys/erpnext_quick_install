@@ -18,10 +18,10 @@ and then reboot your machine
 # Important!
 Do not run this script as root as it will fail when setting up the site. If your VPS default user is root, create a non-root user by following these steps:
 
-1. Create a new user (you can change frappeuser to your preferred user name):
+1. Create a new user (you can change frappe to your preferred user name):
 ```
-sudo adduser frappeuser
-Full Name []: frappeuser
+$ sudo adduser frappe
+Full Name []: frappe
 Room Number []:
 Work Phone []:
 Home Phone []:
@@ -30,15 +30,15 @@ Is the information correct? [Y]
 ```
 2. Add the user to sudoers:
 ```
-usermod -aG sudo frappeuser
+$ usermod -aG sudo frappe
 ```
 3. Switch to created user:
 ```
-su frappeuser
+$ su frappe
 ```
 4. Ensure you're on created user's home directory:
 ```
-cd /home/frappeuser
+$ cd /home/frappe
 ```
 5. Continue with the next steps below.
 
@@ -46,19 +46,19 @@ cd /home/frappeuser
 
 1. Clone the Repo:
 ```
-git clone https://github.com/champion-sys/erpnext_quick_install.git
+$ git clone https://github.com/champion-sys/erpnext_quick_install.git
 ```
 2. navigate to the folder:
 ```
-cd erpnext_quick_install
+$ cd erpnext_quick_install
 ```
 3. Make the script executable
 ```
-chmod +x erpnext_install.sh
+$ chmod +x erpnext_install.sh
 ```
 4. Run the script:
 ```
-source erpnext_install.sh
+$ source erpnext_install.sh
 ```
 # Compatibility
 
